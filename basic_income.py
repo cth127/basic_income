@@ -39,7 +39,7 @@ def gini_coef(society) :
     c_coef = (b - society[0] + c - society[1]) / pie * 1 / 5 * 1 / 2
     d_coef = (c - society[0] + d - society[1]) / pie * 1 / 5 * 1 / 2
     e_coef = (d - society[0] + e - society[1]) / pie * 1 / 5 * 1 / 2
-    gini = 1 - (a_coef + b_coef + c_coef + d_coef + e_coef)
+    gini = a_coef + b_coef + c_coef + d_coef + e_coef
     return gini
 
 # each k means 1 year
